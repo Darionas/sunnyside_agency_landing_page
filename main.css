@@ -1,0 +1,35 @@
+@import url(reset.css);
+@import url(FM_part.css);
+
+
+:root {
+    /* colors */
+    /* primary*/
+   
+    /* neutral */
+  
+}
+  
+    /* typography */
+    /* fonts */
+ 
+
+/*---------------------Mobile layout-------------------------*/
+
+/* style 1st component - mobile */
+
+
+/* style 2nd component - mobile */
+/* 2nd component styled in external stylesheet */
+
+/*---------------------Desktop layout-------------------------*/
+@media screen and (min-width: 48rem) {
+
+/* style 1st component - desktop */ 
+
+/*style 2nd component - desktop */
+/* 2nd component styled in external stylesheet */
+    
+}
+
+/*------------------grid area names---------------------------*/
