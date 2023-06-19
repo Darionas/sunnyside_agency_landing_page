@@ -2,6 +2,13 @@
 
 ## Welcome! 👋
 
+## Updates
+
+| darionas | josh76543210 |
+| -------- | ------------ |
+| initial  |              |
+| update_1 |              |
+
 ## Challenge based on
 
 - HTML
@@ -23,4 +30,15 @@
 - [ ] Craete grid layout for desktop (6th task)
 - [ ] Implement JavaScript (7th task)
 - [ ] Overview of solution and RWD (8th task)
-- [ ] Tada it is done. Congratulation you reach your goal.🎉
+- [ ] Tada, it is done. Congratulation you reach your goal.🎉
+
+## Workflow for contribution:
+
+- Fork the repository (repo) to your own GitHub account
+- Clone the project to your PC (Git)
+- Create a new branch locally with a succinct but descriptive name
+- Make changes (edit, delete, copy, add) on the new brach
+- Commit changes to the branch
+- Push changes to your fork (repo)
+- Open a Pull Request (PR) in our repository and follow the PR template so that we can efficiently review the changes.
+- Wait when your contribution will be accepted (merged) or declined to fix issues.
