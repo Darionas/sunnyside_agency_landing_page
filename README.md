@@ -6,7 +6,7 @@
 
 | darionas | josh76543210 |
 | -------- | ------------ |
-| initial  |              |
+| initial  | update_2     |
 | update_1 |              |
 
 ## Challenge based on
