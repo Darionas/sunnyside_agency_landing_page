@@ -4,11 +4,10 @@
 
 ## Updates
 
-|   darionas   | josh76543210 |
-| ------------ | ------------ |
-| initial      |              |
-| README.md_1  |              |
-| index.html_3 |              |
+| darionas | josh76543210 |
+| -------- | ------------ |
+| initial  |              |
+| update_1 |              |
 
 ## Challenge based on
 
