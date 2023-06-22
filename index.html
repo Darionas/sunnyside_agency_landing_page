@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="Sunnyside agency landing page solution" />
-  <meta name="description" content="Sunnyside agency landing page challenge on Frontend Mentor" />
-  <meta name="author" content="josh76543210 & darionas" />
-  <link rel="stylesheet" href="main.css" />
-  <script defer src="main.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Sunnyside agency landing page solution" />
+    <meta
+      name="description"
+      content="Sunnyside agency landing page challenge on Frontend Mentor"
+    />
+    <meta name="author" content="josh76543210 & darionas" />
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
     <div class="grid-container">
-        <!--1st component-->
+      <!--1st component-->
       <header class="header">
         <!--
             - josh76543210 you have done very good, just small issues should be fixed (actually it is just recommendations) ;)
@@ -23,18 +31,34 @@
             - good article how to make hamburger menu: https://xane514.medium.com/aria-controls-for-creating-a-mobile-navbar-6001012153a0
             - all images in desktop and mobile subfolders of images folder serve like I have done;
         -->
-         <img class="header__logo" src="images/logo.svg" alt="Sunnyside" />
-        <img
-          class="header__hamburger-menu"
-          src="images/icon-hamburger.svg"
-          alt=""
-        />
+        <img class="header__logo" src="images/logo.svg" alt="Sunnyside" />
+        <button
+          class="header__navbar-toggler"
+          aria-expanded="false"
+          aria-controls="navbarDropdown"
+        >
+          <img
+            class="header__hamburger-menu"
+            src="images/icon-hamburger.svg"
+            alt=""
+          />
+        </button>
         <nav class="navigation">
           <ul class="navigation__list">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a class="navigation__button" href="#">Contact</a></li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">About</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Services</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Projects</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--box" href="#"
+                >Contact</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
@@ -85,9 +109,19 @@
           </div>
           <div class="services__photography">
             <picture class="service__image">
-                <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-photography.jpg">
-                <source media="(min-width: 48rem)" srcset="images/desktop/image-photography.jpg">
-                <img class="service__image-orange" src="images/desktop/image-photography.jpg" alt="The orange" />
+              <source
+                media="(max-width: 47.9375rem)"
+                srcset="images/mobile/image-photography.jpg"
+              />
+              <source
+                media="(min-width: 48rem)"
+                srcset="images/desktop/image-photography.jpg"
+              />
+              <img
+                class="service__image-orange"
+                src="images/desktop/image-photography.jpg"
+                alt="The orange"
+              />
             </picture>
             <h2 class="services__title">Photography</h2>
             <p class="services__description">
@@ -98,76 +132,167 @@
         </section>
         <!--3nd component-->
         <section class="testimonials">
-            <h2 class="testimonials__heading">Client testimonials</h2>
-            <div class="client client__emily">
-                <img class="client__photo" src="images/image-emily.jpg" alt="Emily" />
-                <p class="client__testimonial">We put our trust in Sunnyside and they delivered, making sure
-                    our needs were met and deadlines were always hit.
-                </p>
-                <p class="client__name">Emily R.</p>
-                <p class="client__position">Marketing Director</p>
-            </div>
-            <div class="client client__thomas">
-                <img class="client__photo" src="images/image-thomas.jpg" alt="Thomas" />
-                <p class="client__testimonial">Sunnyside's enthusiasm coupled with their keen interest in our brand's success
-                    made it a satisfying and enjoyable experience.
-                </p>
-                <p class="client__name">Thomas S.</p>
-                <p class="client__position">Chief Operating Officer</p>
-            </div>
-            <div class="client client__jennie">
-                <img class="client__photo" src="images/image-jennie.jpg" alt="Jennie" />
-                <p class="client__testimonial">Sunnyside's enthusiasm coupled with their keen interest in our brand's success
-                    made it a satisfying and enjoyable experience.
-                </p>
-                <p class="client__name">Jennie F.</p>
-                <p class="client__position">Business Owner</p>
-            </div>
+          <h2 class="testimonials__heading">Client testimonials</h2>
+          <div class="client client__emily">
+            <img
+              class="client__photo"
+              src="images/image-emily.jpg"
+              alt="Emily"
+            />
+            <p class="client__testimonial">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <p class="client__name">Emily R.</p>
+            <p class="client__position">Marketing Director</p>
+          </div>
+          <div class="client client__thomas">
+            <img
+              class="client__photo"
+              src="images/image-thomas.jpg"
+              alt="Thomas"
+            />
+            <p class="client__testimonial">
+              Sunnyside's enthusiasm coupled with their keen interest in our
+              brand's success made it a satisfying and enjoyable experience.
+            </p>
+            <p class="client__name">Thomas S.</p>
+            <p class="client__position">Chief Operating Officer</p>
+          </div>
+          <div class="client client__jennie">
+            <img
+              class="client__photo"
+              src="images/image-jennie.jpg"
+              alt="Jennie"
+            />
+            <p class="client__testimonial">
+              Sunnyside's enthusiasm coupled with their keen interest in our
+              brand's success made it a satisfying and enjoyable experience.
+            </p>
+            <p class="client__name">Jennie F.</p>
+            <p class="client__position">Business Owner</p>
+          </div>
         </section>
         <!--4th component-->
         <section class="images__gallery">
-            <picture class="image__bottle">
-                <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-gallery-milkbottles.jpg">
-                <source media="(min-width: 48rem)" srcset="images/desktop/image-gallery-milkbottles.jpg">
-                <img class="bottle" src="images/desktop/image-gallery-milkbottles.jpg" alt="Botlles" />
-            </picture>
-            <picture class="image__orange">
-                <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-gallery-orange.jpg">
-                <source media="(min-width: 48rem)" srcset="images/desktop/image-gallery-orange.jpg">
-                <img class="orange" src="images/desktop/image-gallery-orange.jpg" alt="The orange" />
-            </picture>
-            <picture class="image__cone">
-                <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-gallery-cone.jpg">
-                <source media="(min-width: 48rem)" srcset="images/desktop/image-gallery-cone.jpg">
-                <img class="cone" src="images/desktop/image-gallery-cone.jpg" alt="The cone" />
-            </picture>
-            <picture class="image__sugarcubes">
-                <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-gallery-sugarcubes.jpg">
-                <source media="(min-width: 48rem)" srcset="images/desktop/image-gallery-sugarcubes.jpg">
-                <img class="sugarcubes" src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar cubes" />
-            </picture>
+          <picture class="image__bottle">
+            <source
+              media="(max-width: 47.9375rem)"
+              srcset="images/mobile/image-gallery-milkbottles.jpg"
+            />
+            <source
+              media="(min-width: 48rem)"
+              srcset="images/desktop/image-gallery-milkbottles.jpg"
+            />
+            <img
+              class="bottle"
+              src="images/desktop/image-gallery-milkbottles.jpg"
+              alt="Botlles"
+            />
+          </picture>
+          <picture class="image__orange">
+            <source
+              media="(max-width: 47.9375rem)"
+              srcset="images/mobile/image-gallery-orange.jpg"
+            />
+            <source
+              media="(min-width: 48rem)"
+              srcset="images/desktop/image-gallery-orange.jpg"
+            />
+            <img
+              class="orange"
+              src="images/desktop/image-gallery-orange.jpg"
+              alt="The orange"
+            />
+          </picture>
+          <picture class="image__cone">
+            <source
+              media="(max-width: 47.9375rem)"
+              srcset="images/mobile/image-gallery-cone.jpg"
+            />
+            <source
+              media="(min-width: 48rem)"
+              srcset="images/desktop/image-gallery-cone.jpg"
+            />
+            <img
+              class="cone"
+              src="images/desktop/image-gallery-cone.jpg"
+              alt="The cone"
+            />
+          </picture>
+          <picture class="image__sugarcubes">
+            <source
+              media="(max-width: 47.9375rem)"
+              srcset="images/mobile/image-gallery-sugarcubes.jpg"
+            />
+            <source
+              media="(min-width: 48rem)"
+              srcset="images/desktop/image-gallery-sugarcubes.jpg"
+            />
+            <img
+              class="sugarcubes"
+              src="images/desktop/image-gallery-sugarcubes.jpg"
+              alt="Sugar cubes"
+            />
+          </picture>
         </section>
       </main>
       <!--5th component-->
       <footer class="footer">
-        <a class="logo" href="#home" aria-label="Home of Sunnyside agency"><img class="footer__logo" src="images/logo.svg" alt="Sunnyside" /></a>
-        <nav class="footer__nav" aria-label="footer">           
-            <a class="footer__navLinks-about" href="#about">About</a>
-            <a class="footer__navLinks-services" href="#services">Services</a>
-            <a class="footer__navLinks-projects" href="#projects">Projects</a>
+        <a class="logo" href="#home" aria-label="Home of Sunnyside agency"
+          ><img class="footer__logo" src="images/logo.svg" alt="Sunnyside"
+        /></a>
+        <nav class="footer__nav" aria-label="footer">
+          <a class="footer__navLinks-about" href="#about">About</a>
+          <a class="footer__navLinks-services" href="#services">Services</a>
+          <a class="footer__navLinks-projects" href="#projects">Projects</a>
         </nav>
         <div class="social__icons">
-            <a class="facebook__icon-container" href="#facebook" aria-label="facebook"><img class="facebook__icon" src="images/icon-facebook.svg" alt="Facebook" /></a>
-            <a class="instagram__icon-container" href="#instagram" aria-label="instagram"><img class="instagram__icon" src="images/icon-instagram.svg" alt="Instagram" /></a>
-            <a class="twitter__icon-container" href="#twitter" aria-label="twitter"><img class="twitter__icon" src="images/icon-twitter.svg" alt="Twitter" /></a>
-            <a class="pinterest__icon-container" href="#pinterest" aria-label="pinterest"><img class="pinterest__icon" src="images/icon-pinterest.svg" alt="Pinterest" /></a>
+          <a
+            class="facebook__icon-container"
+            href="#facebook"
+            aria-label="facebook"
+            ><img
+              class="facebook__icon"
+              src="images/icon-facebook.svg"
+              alt="Facebook"
+          /></a>
+          <a
+            class="instagram__icon-container"
+            href="#instagram"
+            aria-label="instagram"
+            ><img
+              class="instagram__icon"
+              src="images/icon-instagram.svg"
+              alt="Instagram"
+          /></a>
+          <a
+            class="twitter__icon-container"
+            href="#twitter"
+            aria-label="twitter"
+            ><img
+              class="twitter__icon"
+              src="images/icon-twitter.svg"
+              alt="Twitter"
+          /></a>
+          <a
+            class="pinterest__icon-container"
+            href="#pinterest"
+            aria-label="pinterest"
+            ><img
+              class="pinterest__icon"
+              src="images/icon-pinterest.svg"
+              alt="Pinterest"
+          /></a>
         </div>
       </footer>
       <!--6th component-->
-        <footer class="attribution" aria-label="page attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">@josh76543210</a> & <a href="#">@Darionas</a>.
-        </footer>
+      <footer class="attribution" aria-label="page attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">@josh76543210</a> & <a href="#">@Darionas</a>.
+      </footer>
     </div>
-</body>
+  </body>
 </html>
