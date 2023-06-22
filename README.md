@@ -4,11 +4,11 @@
 
 ## Updates
 
-|    darionas    | josh76543210 |
-| -------------  | ------------ |
-|  initial       |   update_2   |
-|  update_1      |              |
-|  update_3      |              |
+| darionas | josh76543210 |
+| -------- | ------------ |
+| initial  | update_2     |
+| update_1 | update_4     |
+| update_3 |              |
 
 ## Challenge based on
 
