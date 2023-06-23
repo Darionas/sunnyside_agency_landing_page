@@ -5,11 +5,12 @@
 ## Updates
 
 | darionas | josh76543210 | Abdoulaye33 |
-| -------- | ------------ |             |
+| -------- | ------------ | ----------- |
 | initial  | update_2     |             |
 | update_1 | update_4     |             |
 | update_3 |              |             |
 | update_5 |              |             |
+| update_6 |              |             |
 
 ## Challenge based on
 
