@@ -4,11 +4,12 @@
 
 ## Updates
 
-| darionas | josh76543210 |
-| -------- | ------------ |
-| initial  | update_2     |
-| update_1 | update_4     |
-| update_3 |              |
+| darionas | josh76543210 | Abdoulaye33 |
+| -------- | ------------ |             |
+| initial  | update_2     |             |
+| update_1 | update_4     |             |
+| update_3 |              |             |
+| update_5 |              |             |
 
 ## Challenge based on
 
@@ -25,8 +26,8 @@
 
 - [x] Create drawing from design (structure of design)(1st task)
 - [x] Create of repo (2nd task)
-- [ ] Create HTML layout (3rd task)
-- [ ] Create CSS layout according style guides (4th task)
+- [x] Create HTML layout (3rd task)
+- [x] Create CSS layout according style guides (4th task)
 - [ ] Create grid layout for mobile first (5th task)
 - [ ] Craete grid layout for desktop (6th task)
 - [ ] Implement JavaScript (7th task)
