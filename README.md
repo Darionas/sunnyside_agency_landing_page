@@ -11,8 +11,6 @@
 | update_3 |              |             |
 | update_5 |              |             |
 | update_6 |              |             |
-| update_7 |              |             |
-| update_8 |              |             |
 
 ## Challenge based on
 
