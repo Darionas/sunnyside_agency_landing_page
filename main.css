@@ -76,6 +76,11 @@ body {
     gap: 1rem;
 }
 
+/* 2.1 COMPONENT - MOBILE */
+
+/* 2.2 COMPONENT - MOBILE */
+
+/* 2.3 COMPONENT - MOBILE */
 
 /* 2.4 COMPONENT - MOBILE */
 .images__gallery {
@@ -88,7 +93,6 @@ body {
 }
 
 /* 3 COMPONENT - MOBILE */
-
 .footer {
     display: grid;
     grid-template-columns: 1fr;
