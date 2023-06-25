@@ -3,22 +3,22 @@
 
 
 :root {
-    /* colors */
-    /* primary*/
+    /* COLORS */
+    /* PRIMARY*/
     --clr-soft-red: hsl(7, 99%, 70%);
     --clr-yellow: hsl(51, 100%, 49%);
     --clr-darkDesaturated-cyan: hsl(167, 40%, 24%); /*graphic design text*/
     --clr-dark-blue: hsl(167, 40%, 24%); /*photography text*/
     --clr-darkModerate-cyan: hsl(168, 34%, 41%); /*footer*/
-    /* neutral */
+    /* NEUTRAL */
     --clr-veryDark-desaturated-blue: hsl(212, 27%, 19%);
     --clr-veryDark-grayish-blue: hsl(213, 9%, 39%);
     --clr-dark-grayish-blue: hsl(232, 10%, 55%);
     --clr-grayish-blue: hsl(210, 4%, 67%);
     --clr-white: hsl(0, 0%, 100%);
 
-    /* typography */
-    /* fonts */
+    /* TYPOGRAPHY */
+    /* FONTS */
     --fs-18: 1.125rem; /* 18px */
     --ff-barlow: 'Barlow', sans-serif;
     --ff-fraunces: 'Fraunces', serif;
@@ -48,18 +48,104 @@ body {
 
 .grid-container {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer'
+        'attribution';
+    justify-items: center;
+    /*border: 2px solid green;*/
 }
 
-/*---------------------Mobile layout-------------------------*/
+/*-------------------- MOBILE LAYOUT -------------------------*/
 
-/* style 1st component - mobile */
+/* 1 COMPONENT - MOBILE */
 
 
-/* style 2nd component - mobile */
-/* 2nd component styled in external stylesheet */
+/* 2 COMPONENT - MOBILE */
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'hero'
+        'about'
+        'services'
+        'testimonials'
+        'images__gallery';
+    gap: 1rem;
+}
 
-/*---------------------Desktop layout-------------------------*/
+
+/* 2.4 COMPONENT - MOBILE */
+.images__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'image__bottle image__orange'
+        'image__cone image__sugarcubes';
+    /*border: 2px solid green;*/
+}
+
+/* 3 COMPONENT - MOBILE */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'logo'
+        'footer__nav'
+        'social__icons';
+    justify-items: center;
+    width: 100%;
+    background-color: var(--clr-darkModerate-cyan);
+}
+
+.logo {
+    padding: 4rem 0 1rem 0;    
+}
+
+.log {
+    fill: var(--clr-dark-blue);
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 1rem 0 4rem 0;
+    width: 85%;
+    /*border: 2px solid green;*/
+}
+
+.footer__nav > a {
+    text-decoration: none;
+    color: var(--clr-dark-blue);
+    font-size: var(--fs-18);
+    font-family: var(--ff-barlow);
+    /*border: 2px solid green;*/
+}
+
+.social__icons {
+    display: inline-flex;
+    padding: 0 0 6rem 0;
+    gap: 1.5rem;
+}
+
+.facebook, .instagram, .twitter, .pinterest {
+    fill: var(--clr-dark-blue);
+}
+
+
+/* 4 COMPONENT - MOBILE */
+/* 4 COMPONENT IS STYLED IN EXTERNAL CSS FILE */
+
+/*--------------------- DESKTOP LAYOUT -------------------------*/
 @media screen and (min-width: 48rem) {
+
+    * {
+        display: none;
+    }
 
 /* style 1st component - desktop */ 
 
@@ -68,4 +154,71 @@ body {
     
 }
 
-/*------------------grid area names---------------------------*/
+/*------------------ GRID AREA NAMES ---------------------------*/
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+
+.hero {
+    grid-area: hero;
+}
+
+.about {
+    grid-area: about;
+}
+
+.services {
+    grid-area: services;
+}
+
+.testimonials {
+    grid-area: testimonials;
+}
+
+/* 2.4 COMPONENT */
+.images__gallery {
+    grid-area: images__gallery;
+}
+
+.image__bottle {
+    grid-area: image__bottle;
+}
+
+.image__orange {
+    grid-area: image__orange;
+}
+
+.image__cone {
+    grid-area: image__cone;
+}
+
+.image__sugarcubes {
+    grid-area: image__sugarcubes;
+}
+
+/* 3 COMPONENT */ 
+.footer {
+    grid-area: footer;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.footer__nav {
+    grid-area: footer__nav;
+}
+
+.social__icons {
+    grid-area: social__icons;
+}
+
+/* 4 COMPONENT */ 
+.attribution {
+    grid-area: attribution;
+}
