@@ -13,6 +13,7 @@
 | update_6 |              |             |
 | update_7 |              |             |
 | update_8 |              |             |
+| update_9 |              |             |
 
 ## Challenge based on
 

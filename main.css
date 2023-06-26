@@ -146,16 +146,38 @@ body {
 
 /*--------------------- DESKTOP LAYOUT -------------------------*/
 @media screen and (min-width: 48rem) {
-
+/*
     * {
         display: none;
     }
+    */
 
 /* 1 COMPONENT - DESKTOP */ 
 
 /* 2 COMPONENT - DESKTOP */ 
+/* 2.1 COMPONENT - DESKTOP */
+
+/* 2.2 COMPONENT - DESKTOP */
+
+/* 2.3 COMPONENT - DESKTOP */
+
+/* 2.4 COMPONENT - DESKTOP */
+.images__gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'image__bottle image__orange image__cone image__sugarcubes';
+    /*border: 2px solid green;*/
+}
 
 /* 3 COMPONENT - DESKTOP */ 
+.footer__nav > a:hover {
+    color: var(--clr-white);
+}
+
+.facebook:hover, .instagram:hover,
+.twitter:hover, .pinterest:hover {
+    fill: var(--clr-white);
+}
 
 /* 4 COMPONENT - DESKTOP */ 
 /* 4 COMPONENT IS STYLED IN EXTERNAL CSS FILE */
