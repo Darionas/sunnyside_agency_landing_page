@@ -279,7 +279,7 @@ body {
     "social__icons";
   justify-items: center;
   width: 100%;
-  background-color: var(--clr-darkModerate-cyan);
+  background-color: #91d4c6;
 }
 
 .logo {
