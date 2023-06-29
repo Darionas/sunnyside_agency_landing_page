@@ -4,16 +4,17 @@
 
 ## Updates
 
-| darionas | josh76543210 | Abdoulaye33 |
-| -------- | ------------ | ----------- |
-| initial  | update_2     |             |
-| update_1 | update_4     |             |
-| update_3 | update_10    |             |
-| update_5 |              |             |
-| update_6 |              |             |
-| update_7 |              |             |
-| update_8 |              |             |
-| update_9 |              |             |
+| darionas  | josh76543210 | Abdoulaye33 |
+| --------- | ------------ | ----------- |
+| initial   | update_2     |             |
+| update_1  | update_4     |             |
+| update_3  | update_10    |             |
+| update_5  | update_12    |             |
+| update_6  |              |             |
+| update_7  |              |             |
+| update_8  |              |             |
+| update_9  |              |             |
+| update_11 |              |             |
 
 ## Challenge based on
 
