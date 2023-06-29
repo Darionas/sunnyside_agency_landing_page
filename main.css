@@ -486,10 +486,10 @@ body {
     color: var(--clr-white);
   }
 
-  .facebook:hover,
-  .instagram:hover,
-  .twitter:hover,
-  .pinterest:hover {
+  .facebook__icon-container:hover > .facebook,
+  .instagram__icon-container:hover > .instagram,
+  .twitter__icon-container:hover > .twitter,
+  .pinterest__icon-container:hover > .pinterest {
     fill: var(--clr-white);
   }
 
