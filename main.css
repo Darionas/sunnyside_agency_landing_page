@@ -56,6 +56,115 @@ body {
   /*border: 2px solid green;*/
 }
 
+/*---------------------Desktop layout-------------------------*/
+
+
+  /* style 1st component - desktop */ 
+  
+  /*style 2nd component - desktop */
+  /* 2nd component styled in external stylesheet */
+  
+  
+  
+  
+  
+  /* Sorry guys i have to uses media queries cause im a newbie*/
+  /* Testimonials Component - Desktop start*/
+  
+  @media screen and (min-width: 48rem) {
+    .testimonials {
+      text-align: center;
+      padding: 90px;
+    }
+  
+    .testimonials__heading {
+      text-align: center;
+      color: #A7AAAD;
+      padding-bottom: 50px;
+      font-size: 4vw;
+      font-weight: bold;
+    }
+  
+    .customers {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .client__photo {
+      border-radius: 48% 52% 48% 52%/51% 50% 50% 49%;
+      margin-left: 12vw;
+      width: 6vw;
+    }
+  
+    .client__testimonial {
+      word-break: break-word;
+      padding-top: 5vw;
+      padding-right: 2vw;
+      font-size: 1.6vw;
+    }
+  
+    .client {
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+    }
+  
+    .client__name {
+      margin-top: 5vw;
+      font-weight: bold;
+    }
+  
+    .client__position {
+      padding: 1vw;
+      color: var(--clr-grayish-blue);
+      font-size: 1.6vw;
+    }
+  }
+  
+  /* Testimonials Component - Desktop end*/
+  
+  /* Testimonials Component - Mobile start */
+
+  @media screen and (max-width: 48rem) {
+    .testimonials {
+      text-align: center;
+      padding: 5%;
+    }
+    .client__photo {
+      border-radius: 48% 52% 48% 52%/51% 50% 50% 49%;
+      width: 15vw;
+      margin: auto;
+    }
+    .testimonials__heading {
+      text-align: center;
+      color: #A7AAAD;
+      padding: 50px;
+      font-size: 4vw;
+      font-weight: bold;
+    }
+    .client {
+      padding: 50px;
+    }
+    .client__position {
+      padding: 1vw;
+      color: var(--clr-grayish-blue);
+      font-size: 2vw;
+    }
+    .client__name {
+      margin: 2vw;
+      font-weight: bold;
+    }
+    .client__testimonial {
+      word-break: break-word;
+      padding: 5vw;
+      font-size: 3vw;
+      color: var(--clr-dark-grayish-blue);
+    }
+  }
+
+    /* Testimonials Component - Mobile end */
+  
+
 /*-------------------- MOBILE LAYOUT -------------------------*/
 
 /* 1 COMPONENT - MOBILE */
