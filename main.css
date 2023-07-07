@@ -478,8 +478,20 @@ body {
   .images__gallery {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "image__bottle image__orange image__cone image__sugarcubes";
+    justify-items: center;
     /*border: 2px solid green;*/
   }
+
+  .image__bottle, .image__orange, .image__cone, .image__sugarcubes {
+    width: 100%;
+  }
+
+  .bottle, .orange,
+  .cone, .sugarcubes {
+    object-fit: cover;
+    width: 100%;
+    /*border: 2px solid green;*/
+}
 
   /* 3 COMPONENT - DESKTOP */
   .footer__nav > a:hover {
