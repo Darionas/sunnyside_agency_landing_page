@@ -56,127 +56,31 @@ body {
   /*border: 2px solid green;*/
 }
 
-/*---------------------Desktop layout-------------------------*/
-
-
-  /* style 1st component - desktop */ 
-  
-  /*style 2nd component - desktop */
-  /* 2nd component styled in external stylesheet */
-  
-  
-  
-  
-  
-  /* Sorry guys i have to uses media queries cause im a newbie*/
-  /* Testimonials Component - Desktop start*/
-  
-  @media screen and (min-width: 48rem) {
-    .testimonials {
-      text-align: center;
-      padding: 90px;
-    }
-  
-    .testimonials__heading {
-      text-align: center;
-      color: #A7AAAD;
-      padding-bottom: 50px;
-      font-size: 4vw;
-      font-weight: bold;
-    }
-  
-    .customers {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-  
-    .client__photo {
-      border-radius: 48% 52% 48% 52%/51% 50% 50% 49%;
-      margin-left: 12vw;
-      width: 6vw;
-    }
-  
-    .client__testimonial {
-      word-break: break-word;
-      padding-top: 5vw;
-      padding-right: 2vw;
-      font-size: 1.6vw;
-    }
-  
-    .client {
-      padding-top: 2vw;
-      padding-bottom: 2vw;
-    }
-  
-    .client__name {
-      margin-top: 5vw;
-      font-weight: bold;
-    }
-  
-    .client__position {
-      padding: 1vw;
-      color: var(--clr-grayish-blue);
-      font-size: 1.6vw;
-    }
-  }
-  
-  /* Testimonials Component - Desktop end*/
-  
-  /* Testimonials Component - Mobile start */
-
-  @media screen and (max-width: 48rem) {
-    .testimonials {
-      text-align: center;
-      padding: 5%;
-    }
-    .client__photo {
-      border-radius: 48% 52% 48% 52%/51% 50% 50% 49%;
-      width: 15vw;
-      margin: auto;
-    }
-    .testimonials__heading {
-      text-align: center;
-      color: #A7AAAD;
-      padding: 50px;
-      font-size: 4vw;
-      font-weight: bold;
-    }
-    .client {
-      padding: 50px;
-    }
-    .client__position {
-      padding: 1vw;
-      color: var(--clr-grayish-blue);
-      font-size: 2vw;
-    }
-    .client__name {
-      margin: 2vw;
-      font-weight: bold;
-    }
-    .client__testimonial {
-      word-break: break-word;
-      padding: 5vw;
-      font-size: 3vw;
-      color: var(--clr-dark-grayish-blue);
-    }
-  }
-
-    /* Testimonials Component - Mobile end */
-  
-
 /*-------------------- MOBILE LAYOUT -------------------------*/
 
 /* 1 COMPONENT - MOBILE */
 .header {
   background: #3ebfff;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+     'header__link header__navbar-toggler';
+  /*border: 2px solid green;*/
+}
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.header__link {
+    justify-self: start;
+    margin: 0 1rem;
+    /*border: 2px solid green;*/
+}
+
+.header__navbar-toggler {
+    justify-self: end;
+    margin: 0 1rem;
+    /*border: 2px solid green;*/
 }
 
 [aria-controls="navbarDropdown"] {
@@ -190,7 +94,6 @@ body {
 }
 
 .navigation {
-  /* display: none; */
   background-color: white;
   padding: 2rem;
   margin: 0 1rem;
@@ -201,7 +104,6 @@ body {
 }
 
 .navigation::before {
-  /* display: none; */
   content: "";
   border-left: 20px solid transparent;
   border-right: 20px solid white;
@@ -216,7 +118,6 @@ body {
 
 .navigation__list {
   list-style-type: none;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,7 +152,6 @@ body {
   font-family: var(--ff-fraunces);
   padding: 1rem 2rem;
   border-radius: 999rem;
-
   display: block;
 }
 
@@ -276,33 +176,42 @@ body {
 
 /* 2.1 COMPONENT - MOBILE */
 .hero {
-  padding: 5rem 1rem 10rem;
+  padding: 5rem 0rem 10rem;
   background-image: url(images/mobile/image-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+      'hero__title'
+      'hero__arrow';
+  justify-items: center;
   gap: 3rem;
+  /*border: 2px solid green;*/
 }
 
 .hero__title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  min-width: 16rem;
   letter-spacing: 0.5rem;
   color: var(--clr-white);
   font-family: var(--ff-fraunces);
   font-weight: var(--fw-900);
   text-transform: uppercase;
+  /*border: 2px solid green;*/
+}
+
+.hero__arrow {
+  align-items: end;
+  margin: 0 0 -2rem 0;
+  /*border: 2px solid green;*/
 }
 
 .about__text {
   text-align: center;
   padding: 4rem 2rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -391,6 +300,56 @@ body {
 }
 
 /* 2.3 COMPONENT - MOBILE */
+@media screen and (max-width: 48rem) {
+  .testimonials {
+    text-align: center;
+    padding: 5%;
+  }
+
+  .client__photo {
+    border-radius: 50%;
+    width: 4rem;
+    padding: 1.5rem 0;
+    margin: auto;
+  }
+
+  .testimonials__heading {
+    text-align: center;
+    color: #A7AAAD;
+    text-transform: uppercase;
+    padding: 3rem;
+    font-size: var(--fs-18);
+    font-weight: var(--fw-700);
+    font-family: var(--ff-fraunces);
+  }
+  
+  .customers {
+    padding: 0 0 2rem 0;
+  }
+
+  .client {
+    padding: .2rem;
+  }
+
+  .client__position {
+    padding: 0.2rem 0 1.2rem 0;
+    color: var(--clr-grayish-blue);
+    font-size: 1rem;
+    font-family: var(--ff-barlow);
+  }
+
+  .client__name {
+    font-weight: var(--fw-900);
+    font-family: var(--ff-fraunces);
+  }
+
+  .client__testimonial {
+    word-break: break-word;
+    padding: 0 0 1.5rem 0;
+    font-size: var(--fs-18);
+    color: var(--clr-dark-grayish-blue);
+  }
+}
 
 /* 2.4 COMPONENT - MOBILE */
 .images__gallery {
@@ -458,20 +417,26 @@ body {
 
 /*--------------------- DESKTOP LAYOUT -------------------------*/
 @media screen and (min-width: 48rem) {
-  /*
-    * {
-        display: none;
-    }
-    */
 
   /* 1 COMPONENT - DESKTOP */
   .header {
+    grid-template-areas:
+        'header__link navigation';
+    align-items: center;
     padding: 2rem 4rem;
+    /*border: 2px solid green;*/
   }
 
   .header__logo {
     width: 15rem;
+    margin: 0 0 0 -3rem;
   }
+
+  .navigation {
+    width: 100%;
+    justify-self: end;
+    /*border: 2px solid green;*/
+}
 
   [aria-controls="navbarDropdown"] {
     display: none;
@@ -491,12 +456,15 @@ body {
 
   .navigation__list {
     flex-direction: row;
-    gap: 3rem;
+    justify-content: end;
+    margin: 0 0 0 -14rem;
+    gap: 2rem;
   }
 
   [aria-expanded="false"] ~ nav {
     display: inline-block;
   }
+
   [aria-expanded="true"] ~ nav {
     display: inline-block;
   }
@@ -530,19 +498,23 @@ body {
   .hero {
     background-image: url(images/desktop/image-header.jpg);
     padding-bottom: 30rem;
+    gap: 7rem;
   }
 
   .hero__title {
     font-size: 4rem;
   }
 
-  .about,
-  .services {
-    width: 100%;
-    margin: 0 auto;
+  .hero__arrow {
+     margin: 0 0 -10rem 0;
+  }
 
+  .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'about__image about__text';
+    justify-items: center;
   }
 
   .about__image {
@@ -557,10 +529,15 @@ body {
   }
 
   .about__text {
-    padding: 4rem 8rem;
     text-align: left;
-
+    min-width: 23rem;
     align-items: flex-start;
+    justify-items: start;
+    /*border: 2px solid green;*/
+  }
+
+  .about__title, .about__description {
+    max-width: 28.5rem;
   }
 
   .about__title {
@@ -572,16 +549,114 @@ body {
   }
 
   /* 2.2 COMPONENT - DESKTOP */
+  .services {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+.services__graphic-design {
+  background-color: #97d9cd;
+}
+
+.services__photography {
+  background-color: #62ccfe;
+}
+
   .services__image--cherry,
   .services__image--orange {
     width: 100%;
+    
   }
 
   .services__text {
-    padding: 4rem 10rem;
+    margin: auto;
+    padding: 1rem;
+    max-width: 27rem;
+    height: 14rem;
+    /*border: 2px solid green;*/
+  }
+
+  .services__description {
+    color: var(--clr-veryDark-grayish-blue);
   }
 
   /* 2.3 COMPONENT - DESKTOP */
+
+  @media screen and (min-width: 48rem) {
+    .testimonials {
+      text-align: center;
+      padding: 5rem 0 2rem 0;
+      width: 100%;
+    }
+  
+    .testimonials__heading {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: var(--ff-fraunces);
+      letter-spacing: .3rem;
+      color: var(--clr-grayish-blue);
+      padding-bottom: 2rem;
+      font-size: 1.5rem;
+      font-weight: var(--fw-700);
+    }
+  
+    .customers {
+      display: flex;
+      justify-content: center;
+      margin: 0 0 5rem 0;
+      /*border: 2px solid green;*/
+    }
+  
+    .client__photo {
+      border-radius: 50%;
+      margin: auto;
+      width: 5rem;
+    }
+  
+    .client__testimonial {
+      word-break: break-word;
+      margin: auto;
+      margin-bottom: 4rem;
+      max-width: 24rem;
+      padding: 3rem 1rem 0 1rem;
+      font-size: var(--fw-700);
+      color: var(--clr-dark-grayish-blue);
+    }
+
+    .customers {
+      padding: 0 4rem;
+      /*border: 2px solid green;*/
+    }
+  
+    .client {
+      padding: 1rem 2rem;
+      position: relative;
+      /*border: 2px solid green;*/
+    }
+
+    .client__description {
+      position: absolute;
+      bottom: 0rem;
+      left: 10%;
+      right: 10%;
+      /*border: 2px solid green;*/
+    }
+  
+    .client__name {
+      font-family: var(--ff-fraunces);
+      font-weight: var(--fw-700);
+      font-size: var(--fs-18);
+     
+    }
+  
+    .client__position {
+      padding: 0.2rem;
+      color: var(--clr-grayish-blue);
+      font-size: .8rem;
+    }
+  }
 
   /* 2.4 COMPONENT - DESKTOP */
   .images__gallery {
@@ -591,15 +666,23 @@ body {
     /*border: 2px solid green;*/
   }
 
-  .image__bottle, .image__orange, .image__cone, .image__sugarcubes {
+  .image__bottle, .image__orange, 
+  .image__cone, .image__sugarcubes {
     width: 100%;
+    object-fit: cover;
   }
 
   .bottle, .orange,
   .cone, .sugarcubes {
     object-fit: cover;
     width: 100%;
+    height: 104%;
     /*border: 2px solid green;*/
+}
+
+.pict {
+  height: 97%;
+  /*border: 2px solid green;*/
 }
 
   /* 3 COMPONENT - DESKTOP */
@@ -623,12 +706,32 @@ body {
   grid-area: header;
 }
 
+.header__link {
+  grid-area: header__link;
+}
+
+.header__navbar-toggler {
+  grid-area: header__navbar-toggler;
+}
+
+.navigation {
+  grid-area: navigation;
+}
+
 .main {
   grid-area: main;
 }
 
 .hero {
   grid-area: hero;
+}
+
+.hero__title {
+  grid-area: hero__title;
+}
+
+.hero__arrow {
+  grid-area: hero__arrow;
 }
 
 .about {
