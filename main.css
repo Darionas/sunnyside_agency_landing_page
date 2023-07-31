@@ -676,13 +676,8 @@ body {
   .cone, .sugarcubes {
     object-fit: cover;
     width: 100%;
-    height: 104%;
+    height: 100%;
     /*border: 2px solid green;*/
-}
-
-.pict {
-  height: 97%;
-  /*border: 2px solid green;*/
 }
 
   /* 3 COMPONENT - DESKTOP */
