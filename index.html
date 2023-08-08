@@ -32,21 +32,13 @@
       <!--1 COMPONENT-->
       <header class="header">
         <a href="#" class="header__link">
-          <img class="header__logo" src="images/logo.svg" alt="Sunnyside"
-        /></a>
-        <button
-          class="header__navbar-toggler"
-          aria-expanded="false"
-          aria-controls="navbarDropdown"
-        >
-          <img
-            class="header__hamburger-menu"
-            src="images/icon-hamburger.svg"
-            alt=""
-          />
-        </button>
-        <nav id="navbarDropdown" class="navigation">
-          <ul class="navigation__list">
+          <img class="header__logo" src="images/logo.svg" alt="Sunnyside" />
+        </a>
+        <nav class="navigation">
+          <button class="header__navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+            <img class="header__hamburger-menu" src="images/icon-hamburger.svg" alt="" />
+          </button>
+          <ul id="navbarDropdown" class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="#">About</a>
             </li>
@@ -56,10 +48,8 @@
             <li class="navigation__item">
               <a class="navigation__link" href="#">Projects</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--box" href="#"
-                >Contact</a
-              >
+            <li class="navigation__item navigation__contact">
+              <a class="navigation__link navigation__link--box" href="#">Contact</a>
             </li>
           </ul>
         </nav>

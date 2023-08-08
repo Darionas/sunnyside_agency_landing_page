@@ -67,17 +67,27 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-     'header__link header__navbar-toggler';
+     'header__link navigation';
   /*border: 2px solid green;*/
 }
 
 .header__link {
+  display: grid;
     justify-self: start;
-    margin: 0 1rem;
+    margin: 0 0 0 1rem;
     /*border: 2px solid green;*/
 }
 
+.navigation {
+  display: grid;
+  justify-self: end;
+  /*border: 2px solid green;*/
+}
+
 .header__navbar-toggler {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
     justify-self: end;
     margin: 0 1rem;
     /*border: 2px solid green;*/
@@ -87,23 +97,26 @@ body {
   display: block;
 }
 
-.header__navbar-toggler {
-  cursor: pointer;
-  border: none;
-  background: none;
+[aria-expanded="false"] ~ .navigation__list {
+  display: none;
 }
 
-.navigation {
+[aria-expanded="true"] ~ .navigation__list {
+  display: block;
   background-color: white;
+  list-style-type: none;
+  line-height: 2.8rem;
+  text-align: center;
+  max-width: 21rem;
   padding: 2rem;
-  margin: 0 1rem;
+  margin: auto;
   position: absolute;
   top: 180%;
-  left: 0;
-  right: 0;
+  left: 2%;
+  right: 2%;
 }
 
-.navigation::before {
+.navigation__list::before {
   content: "";
   border-left: 20px solid transparent;
   border-right: 20px solid white;
@@ -116,21 +129,11 @@ body {
   transform: translateY(-50%);
 }
 
-.navigation__list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+.link {
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-[aria-expanded="false"] ~ nav {
-  display: none;
-}
-[aria-expanded="true"] ~ nav {
-  display: block;
-}
 
 .navigation__link:link,
 .navigation__link:visited {
@@ -144,13 +147,19 @@ body {
   border-bottom: 0.15rem solid var(--clr-dark-grayish-blue);
 }
 
+.navigation__contact {
+  margin: 1rem 0 0 0;
+}
+
 .navigation__link--box:link,
 .navigation__link--box:visited {
   background-color: var(--clr-yellow);
   color: var(--clr-veryDark-desaturated-blue);
   text-transform: uppercase;
   font-family: var(--ff-fraunces);
-  padding: 1rem 2rem;
+  padding: .5rem 1rem;
+  width: 9rem;
+  margin: auto;
   border-radius: 999rem;
   display: block;
 }
@@ -344,7 +353,6 @@ body {
   }
 
   .client__testimonial {
-    word-break: break-word;
     padding: 0 0 1.5rem 0;
     font-size: var(--fs-18);
     color: var(--clr-dark-grayish-blue);
@@ -359,6 +367,10 @@ body {
     "image__bottle image__orange"
     "image__cone image__sugarcubes";
   /*border: 2px solid green;*/
+}
+
+.sr-only {
+  display: none;
 }
 
 /* 3 COMPONENT - MOBILE */
@@ -420,6 +432,7 @@ body {
 
   /* 1 COMPONENT - DESKTOP */
   .header {
+    grid-template-columns: 2fr;
     grid-template-areas:
         'header__link navigation';
     align-items: center;
@@ -442,31 +455,16 @@ body {
     display: none;
   }
 
-  .navigation {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    top: 0;
-  }
-
-  .navigation::before {
-    display: none;
-  }
-
-  .navigation__list {
-    flex-direction: row;
-    justify-content: end;
-    margin: 0 0 0 -14rem;
+  [aria-expanded="false"] ~ .navigation__list {
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+    list-style-type: none;
     gap: 2rem;
   }
 
-  [aria-expanded="false"] ~ nav {
-    display: inline-block;
-  }
-
-  [aria-expanded="true"] ~ nav {
-    display: inline-block;
+  .navigation__list::before {
+    display: none;
   }
 
   .navigation__link:link,
@@ -480,10 +478,16 @@ body {
     border-bottom: 0.15rem solid var(--clr-white);
   }
 
+  .navigation__contact {
+    margin: 0;
+  }
+
   .navigation__link--box:link,
   .navigation__link--box:visited {
     background-color: var(--clr-white);
     color: var(--clr-veryDark-desaturated-blue);
+    padding: 1rem 2rem;
+    width: 9.5rem;
   }
 
   .navigation__link--box:hover,
@@ -616,7 +620,6 @@ body {
     }
   
     .client__testimonial {
-      word-break: break-word;
       margin: auto;
       margin-bottom: 4rem;
       max-width: 24rem;
