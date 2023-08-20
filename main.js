@@ -3,7 +3,7 @@
 
 // Toggle Navigation
 const navButton = document.querySelector("button[aria-expanded]");
-function toggleNav({ target }) {
+function toggleNav() {
   const expanded = navButton.getAttribute("aria-expanded") === "true";
   navButton.setAttribute("aria-expanded", !expanded);
 }
