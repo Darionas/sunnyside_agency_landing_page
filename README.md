@@ -64,7 +64,7 @@ But created with :heart:
 
 ### What we practiced
 
-Hey, we practice collab on GitHub platform. As we have different experience we have used different techniques in css to achieve RWD: flex, grid, media query. And we succeded. Thank you **josh76543210**, **Abdoulaye33** for collab.
+Hey, we practiced collab on GitHub platform. As we have different experience we have used different techniques in css to achieve RWD: flex, grid, media query. And we succeded. Thank you **josh76543210**, **Abdoulaye33** for collab.
 
 ### Continued development
 
