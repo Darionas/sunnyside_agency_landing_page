@@ -10,7 +10,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [What we practiced](#what-we-practiced)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Authors](#authors)
@@ -62,7 +62,7 @@ Collab project was created by **josh76543210**, **Abdoulaye33**, **darionas** fr
 
 But created with :heart:
 
-### What we practice
+### What we practiced
 
 Hey, we practice collab on GitHub platform. As we have different experience we have used different techniques in css to achieve RWD: flex, grid, media query. And we succeded. Thank you **josh76543210**, **Abdoulaye33** for collab.
 
