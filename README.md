@@ -6,7 +6,7 @@
 
 | darionas  | josh76543210 | Abdoulaye33 |
 | --------- | ------------ | ----------- |
-| initial   | update_2     |             |
+| initial   | update_2     | update 11   |
 | update_1  | update_4     |             |
 | update_3  | update_10    |             |
 | update_5  | update_12    |             |
